@@ -1,0 +1,15 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+<img src="{{doc.shop_photo}}"> 
+<h3>Address : {{shop_address}}</h3>
+<h6>Status : {{doc.status}}</h6>
+<p style="font-family: Arial, sans-serif; font-size: 16px;">
+    Prime location! Bustling airport shop seeks new proprietor. 
+    Catch captive audience of travelers, build your dream business. 
+    Flexible terms, prime foot traffic. Contact for details. Don't miss your flight to success! </p>
+<a href="/airport-shop" class="btn btn-primary">Book Flight</a>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

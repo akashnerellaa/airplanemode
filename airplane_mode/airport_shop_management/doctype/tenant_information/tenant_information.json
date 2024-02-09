@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {first_name}-{####}",
+ "creation": "2023-12-28 11:57:44.669238",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "full_name",
+  "date_of_birth",
+  "address_as_per_govt_id",
+  "column_break_jpfj",
+  "last_name",
+  "tenant_photo",
+  "mobile_number",
+  "fathers_name",
+  "mail_id",
+  "government_id_section",
+  "aadhar_number",
+  "column_break_nbkv",
+  "pan_card_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_as_per_govt_id",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address As Per Govt Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jpfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenant_photo",
+   "fieldtype": "Attach Image",
+   "label": "Tenant Photo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "Father's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "government_id_section",
+   "fieldtype": "Section Break",
+   "label": "Government Id"
+  },
+  {
+   "fieldname": "aadhar_number",
+   "fieldtype": "Float",
+   "label": "Aadhar Number",
+   "length": 12,
+   "non_negative": 1,
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nbkv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_card_number",
+   "fieldtype": "Data",
+   "label": "Pan Card Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mail_id",
+   "fieldtype": "Data",
+   "label": "Email ",
+   "options": "Email",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-03 12:37:57.572713",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Tenant Information",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

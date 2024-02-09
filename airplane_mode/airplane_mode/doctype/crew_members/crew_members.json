@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {name1} role-{role}",
+ "creation": "2023-12-26 17:28:43.682738",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "role",
+  "photo",
+  "column_break_jiaq",
+  "dob",
+  "availablity",
+  "id_card_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Pilot in Command\nFirst Officer (FO) or Co-Pilot\nFlight Engineer (FE)\nFlight Attendants (FAs)\nCabin Crew",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "column_break_jiaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "D.O.B",
+   "reqd": 1
+  },
+  {
+   "fieldname": "availablity",
+   "fieldtype": "Select",
+   "label": "Availablity",
+   "options": "AVAILABLE\nON-LEAVE\nBUSY WITH OTHER FLIGHT"
+  },
+  {
+   "fieldname": "id_card_number",
+   "fieldtype": "Data",
+   "label": "Id Card Number",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-27 15:44:37.468284",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Crew Members",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "AVAILABLE"
+  },
+  {
+   "color": "Red",
+   "title": "ON-LEAVE"
+  },
+  {
+   "color": "Purple",
+   "title": "BUSY WITH OTHER FLIGHT"
+  }
+ ]
+}

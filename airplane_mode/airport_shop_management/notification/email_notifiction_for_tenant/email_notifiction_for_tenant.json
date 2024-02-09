@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2024-01-03 18:11:42.165348",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Shop Contract",
+ "enabled": 1,
+ "event": "Custom",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2024-01-03 18:11:42.165348",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Email notifiction for tenant",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Accounts User"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{Shop_Contract.tenanet_name}}"
+}

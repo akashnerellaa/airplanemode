@@ -1,0 +1,105 @@
+<!-- {% if frappe.form_dict.color %}
+    <div style="background-color: {{ frappe.form_dict.color }}; height:300px"></div>
+{% else %}
+    <div style="background-color: black; height:300px"></div>
+{% endif %} -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add the link to the W3Schools icon library stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Custom styles for the body */
+        body {
+            background-color: #c6d5de; /* Set background color */
+            font-family: 'Arial', sans-serif; /* Set font family */
+            color: #495057; /* Set text color */
+        }
+
+        /* Bootstrap navigation bar with logo styles */
+        .navbar {
+            background-color: #C9B3CF; /* Set navbar background color to a light color */
+            border-bottom: 1px solid #dee2e6; /* Add a border to the bottom of the navbar */
+        }
+
+        .navbar-brand img {
+          /* Adjust the maximum height and width of the logo */
+            max-height: 80px;
+            max-width: 80px;         }
+
+        .navbar-nav .nav-link {
+            color: #495057 !important; /* Set text color to a dark color */
+        }
+
+        /* Card styles */
+        .card {
+            margin-top: 20px; /* Adjust the top margin of the card */
+        }
+
+        /* Add more custom styles as needed */
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bootstrap navigation bar with logo -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Replace 'path/to/logo.png' with the actual path to your logo image -->
+            <a class="navbar-brand" href="#"><img src="https://media.giphy.com/media/1zggkti3gDsVxSmT1u/giphy.gif"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="active" href="#"><i class="fa fa-fw fa-home text-dark fa-2x"></i> Home</a>
+                    </li>
+                    <!-- Add more navigation items as needed -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                
+                    {% set shops_available = frappe.get_all("Shops", filters={'status' : 'Available'}, fields = ['shop_number','shop_address','shop_photo']) %}
+
+                    {% if shops_available %}
+                        <h1>Shops Available</h1>
+                        <ul style="margin-left: 0;">
+                            {% for shop in shops_available %}
+                                <div>
+                                    <li>{{ shop.name }}</li>
+                                    <li>{{shop.shop_address}}</li>
+                                    <li><img src="{{shop.shop_photo}}" alt="No Image"></li>
+                                </div>
+                                <a href="/airport-shop" class="btn btn-primary">Apply for Shop</a>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <h1>No Shops Available</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html> 

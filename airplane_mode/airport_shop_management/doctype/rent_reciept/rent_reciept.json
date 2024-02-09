@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{airport}-Recipt-{####}",
+ "creation": "2023-12-28 15:09:17.443727",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_l2d2",
+  "amended_from",
+  "date",
+  "name1",
+  "rent_amount",
+  "column_break_qmik",
+  "airport",
+  "payment_method",
+  "contract_name_"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_l2d2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rent Reciept",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Tenant Information",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "contract_name_.rent_per_month",
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment Method",
+   "options": "Cash\nUPI\nBank Transfer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "contract_name_.airport",
+   "fieldname": "airport",
+   "fieldtype": "Data",
+   "label": "Airport"
+  },
+  {
+   "fieldname": "contract_name_",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract Name",
+   "options": "Shop Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qmik",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-28 18:33:46.741408",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Rent Reciept",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

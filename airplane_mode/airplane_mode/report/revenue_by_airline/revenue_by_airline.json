@@ -1,0 +1,27 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-12-19 21:01:54.022284",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2023-12-20 17:44:30.516549",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Revenue By Airline",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Airplane Ticket",
+ "report_name": "Revenue By Airline",
+ "report_script": "",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

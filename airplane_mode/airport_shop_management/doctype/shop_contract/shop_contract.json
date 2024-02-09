@@ -1,0 +1,227 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {shop_name} - Airport - {airport} - contract Id -CDI{####} ",
+ "creation": "2023-12-28 12:33:09.572577",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tenant_name",
+  "nominee_name",
+  "tenant_address",
+  "advance_payment",
+  "tenant_mail_id",
+  "column_break_wydt",
+  "shop_name",
+  "fulfillment_status",
+  "shop_address",
+  "rent_per_month",
+  "airport",
+  "contract_period_section",
+  "start_date",
+  "column_break_xjom",
+  "end_date",
+  "terms_and_conditions_section",
+  "contract_terms",
+  "tenant_signature",
+  "nominee_signature",
+  "amended_from",
+  "airport_authority_tab",
+  "airport_name",
+  "airport_authority_signature",
+  "column_break_veeh",
+  "point_of_contact",
+  "airport_authority_seal"
+ ],
+ "fields": [
+  {
+   "fieldname": "tenant_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tenant Name ",
+   "options": "Tenant Information",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nominee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nominee Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wydt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shop Name",
+   "options": "Shops",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fulfillment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "FulFillment Status",
+   "options": "Unsigned\nActive\nInactive\nSigned",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_period_section",
+   "fieldtype": "Section Break",
+   "label": "Contract period"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xjom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "terms_and_conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "contract_terms",
+   "fieldtype": "Text Editor",
+   "label": "Contract Terms",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenant_signature",
+   "fieldtype": "Signature",
+   "label": "Tenant Signature"
+  },
+  {
+   "fetch_from": "tenant_name.address_as_per_govt_id",
+   "fieldname": "tenant_address",
+   "fieldtype": "Data",
+   "label": "Tenant Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "shop_name.shop_address",
+   "fieldname": "shop_address",
+   "fieldtype": "Data",
+   "label": "Shop Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nominee_signature",
+   "fieldtype": "Signature",
+   "label": "Nominee Signature"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Shop Contract",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval: doc.fulfillment_status ==\"Signed\"",
+   "fieldname": "airport_authority_tab",
+   "fieldtype": "Tab Break",
+   "label": "Airport Authority"
+  },
+  {
+   "fieldname": "airport_name",
+   "fieldtype": "Link",
+   "label": "Airport Name",
+   "options": "Airport"
+  },
+  {
+   "fieldname": "airport_authority_signature",
+   "fieldtype": "Signature",
+   "label": "Airport Authority Signature"
+  },
+  {
+   "fieldname": "column_break_veeh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "point_of_contact",
+   "fieldtype": "Link",
+   "label": "Point Of Contact",
+   "options": "User"
+  },
+  {
+   "fieldname": "airport_authority_seal",
+   "fieldtype": "Signature",
+   "label": "Airport Authority Seal"
+  },
+  {
+   "fieldname": "advance_payment",
+   "fieldtype": "Currency",
+   "label": "Advance Payment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rent_per_month",
+   "fieldtype": "Currency",
+   "label": "Rent Per Month",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "airport",
+   "fieldtype": "Link",
+   "label": "Airport",
+   "options": "Airport",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "tenant_name.mail_id",
+   "fieldname": "tenant_mail_id",
+   "fieldtype": "Data",
+   "label": "Tenant Mail Id",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-02 15:55:49.336058",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Shop Contract",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

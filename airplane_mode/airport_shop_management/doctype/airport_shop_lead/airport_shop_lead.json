@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-01 16:01:11.653094",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "contact_number",
+  "mail_id",
+  "airport_name",
+  "column_break_ayjk",
+  "your_city",
+  "your_state",
+  "your_country",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mail_id",
+   "fieldtype": "Data",
+   "label": "Mail Id"
+  },
+  {
+   "fieldname": "airport_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airport Name",
+   "options": "Airport",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ayjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "your_city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Your City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "your_state",
+   "fieldtype": "Data",
+   "label": "Your State"
+  },
+  {
+   "fieldname": "your_country",
+   "fieldtype": "Data",
+   "label": "Your Country",
+   "reqd": 1
+  },
+  {
+   "default": "Not-Contacted",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Not-Contacted\nWorking Contacted\nClosed Not-Converted\nConverted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 16:31:37.786482",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Airport Shop Lead",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

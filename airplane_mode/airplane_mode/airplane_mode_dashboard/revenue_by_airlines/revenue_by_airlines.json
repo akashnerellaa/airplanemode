@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Airlines Revenue",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-12-26 18:06:48.153611",
+ "dashboard_name": "Revenue by Airlines",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-12-26 18:06:48.153611",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Revenue by Airlines",
+ "owner": "Administrator"
+}

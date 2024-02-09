@@ -1,0 +1,91 @@
+.maincard{
+    background-image: url('https://wallpapers.com/images/hd/beautiful-scenery-at-the-airport-109y37vybwf8mcf3.jpg'); 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.innercard{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+.card{
+  max-width: 90%;
+  background-image: linear-gradient(to bottom,gold, yellow, purple);
+  display: flex; 
+  flex-wrap: wrap; 
+  border: 1px solid #ccc; 
+  padding: 1rem; 
+  margin: 1rem; 
+  border-radius: 15px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+}
+.ulcard{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.licard{
+    display: flex; 
+    flex-direction: column; 
+    /* flex-wrap: wrap; */
+    margin-right: 30px; 
+    margin-bottom: 30px;
+}
+
+.button {
+    font-family: "Open Sans";
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 28px;
+    margin: 10px;
+    background-color: #177491;
+    color: white;
+    border: 0px;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #3e8e41; 
+  }
+.inputstyle{
+    width: 300px; 
+    height: 40px; 
+    border: 2px solid rgb(255, 166, 0); 
+    border-radius: 15px;
+}
+.footersection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contactsection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 300px;
+    margin-left: 100px;
+}
+.contactdetails{
+    display: flex;
+    flex-direction: row;
+}
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: #ccc; 
+    margin-top: 0px; 
+    margin-bottom: 20px; 
+    width: 100%;
+  }
+  .para{
+     color: #A0ABA2;
+  }

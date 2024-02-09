@@ -1,0 +1,32 @@
+{
+ "chart_name": "Airlines Revenue",
+ "chart_type": "Report",
+ "creation": "2023-12-26 18:06:27.803751",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2023-12-26 18:06:27.803751",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Airlines Revenue",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Revenue By Airline",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Donut",
+ "use_report_chart": 0,
+ "x_field": "airline",
+ "y_axis": [
+  {
+   "y_field": "revenue"
+  }
+ ]
+}
