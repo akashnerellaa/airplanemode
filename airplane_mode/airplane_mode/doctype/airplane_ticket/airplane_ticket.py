@@ -1,4 +1,4 @@
-# Copyright (c) 2023, Mohammed Anas and contributors
+# Copyright (c) 2023, Akash Nerella and contributors
 # For license information, please see license.txt
 
 import frappe
