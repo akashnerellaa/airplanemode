@@ -1,4 +1,4 @@
-// Copyright (c) 2024, Mohammed Anas and contributors
+// Copyright (c) 2024, Akash Nerella  and contributors
 // For license information, please see license.txt
 
 // frappe.ui.form.on("AIRPORT SHOP MANAGEMENT SYSTEM", {
