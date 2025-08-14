@@ -1,6 +1,6 @@
 app_name = "airplane_mode"
 app_title = "Airplane Mode"
-app_publisher = "Akash Nerella"
+app_publisher = "Akash Nerella "
 app_description = "This App tracks the airplane sales"
 app_email = "akashnerella@gmail.com"
 app_license = "mit"
