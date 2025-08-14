@@ -1,7 +1,7 @@
 [project]
 name = "airplane_mode"
 authors = [
-    { name = "Mohammed Anas", email = "anasm8481@gmail.com"}
+    { name = "Akash Nerella", email = "akashnerella@gmail.com"}
 ]
 description = "This App tracks the airplane sales"
 requires-python = ">=3.10"
